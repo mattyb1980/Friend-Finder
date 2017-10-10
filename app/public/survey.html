@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder - Survey Page</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12">
+        <h1>Survey Questions</h1>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Tell us a bit about yourself</h3>
+          </div>
+          <div class="panel-body">
+            <form method="POST" role="form">
+
+              <div class="form-group">
+                <label for>Name (Required)</label>
+                <input type="text" class="form-control" id="userName">
+              </div>
+              <div class="form-group">
+                <label for>Link to Photo Image (Required)</label>
+                <input type="text" class="form-control" id="userImage">
+              </div>
+              <div class="form-group">
+                <label for>Small Bio (Required)</label>
+                <input type="text" class="form-control" id="userBio">
+              </div>
+
+              <label for="sel1">You have a strong love for movies.</label>
+                <select class="form-control" id="sel1" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+              <label for="sel2">You love the daytime and sunlight.</label>
+                <select class="form-control" id="sel2" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel3">You love the outdoors.</label>
+                <select class="form-control" id="sel3" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel4">You are a lover of cats.</label>
+                <select class="form-control" id="sel4" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel5">You feel very human and alive most of the time.</label>
+                <select class="form-control" id="sel5" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel6">You love the smell of the ocean.</label>
+                <select class="form-control" id="sel6" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel7">You are huge about family.</label>
+                <select class="form-control" id="sel7" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel8">You love American muscle cars.</label>
+                <select class="form-control" id="sel8" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel9">You consider yourself a nerd and love comic books.</label>
+                <select class="form-control" id="sel9" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+                <label for="sel10">You can't imagine your life without music.</label>
+                <select class="form-control" id="sel10" style="width: 250px;">
+                  <option hidden >Select an Option</option>
+                  <option value="1">1 Strongly Disagree</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 Strongly Agree</option>
+                </select>
+
+            </form>
+            <br>
+            <div class="text-left">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p>
+      <a href="/api/friends">Friends Link</a> | <a href="/api/waitlist">Git Hub Repository</a>
+    </p>
+  </div>
+
+  <div id="resultsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Your New Friend</strong></h2>
+          </div>
+          <div class="modal-body">
+            <h2 id="bestScoreName"></h2>
+            <img id="bestScorePhoto" src="" alt="" style="width: 300px;">
+            <h3 id="bestScoreBio"></h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newFriend = {
+        name: $("#userName").val().trim(),
+        photo: $("#userImage").val().trim(),
+        bio: $("#userBio").val().trim(),
+        scores: [$("#sel1").val(), $("#sel2").val(), $("#sel3").val(), $("#sel4").val(), $("#sel5").val(), $("#sel6").val(), $("#sel7").val(), $("#sel8").val(), $("#sel9").val(), $("#sel10").val()]
+        
+      };
+
+      // Question: What does this code do??
+      $.post("/api/friends", newFriend, function(data) {
+
+        $("#bestScoreName").text(data.name);
+        $("#bestScorePhoto").attr("src", data.photo);
+        $("#bestScoreBio").text(data.bio);
+      
+        $("#resultsModal").modal("toggle");
+      });
+    });
+  </script>
+
+</body>
+</html>
