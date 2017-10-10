@@ -7,7 +7,7 @@ var friendArray = [
   {
   "name":"Barney",
   "photo":"https://i.ytimg.com/vi/8m3PCZft-tg/hqdefault.jpg",
-  "bio":"Barney Loves You.. he really really loves you.",
+  "bio":"I Love You.. You love me.",
   "scores":[2, 5, 5, 5, 3, 1, 5, 1, 1, 2]
   },
   {

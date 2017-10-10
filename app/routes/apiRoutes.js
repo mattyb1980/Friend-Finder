@@ -27,7 +27,7 @@ module.exports = function(app) {
 
 var scoreDifference = 0;
     
-    var newFriend={
+    var newFriend = {
      name: req.body.name,
      photo: req.body.photo,
      bio: req.body.bio,
