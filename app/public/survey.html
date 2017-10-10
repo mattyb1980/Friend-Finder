@@ -160,16 +160,16 @@
 
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" id="closeModal">&times;</button>
             <h2 class="modal-title"><strong>Your New Friend</strong></h2>
           </div>
-          <div class="modal-body">
+          <div class="modal-body text-center">
             <h2 id="bestScoreName"></h2>
             <img id="bestScorePhoto" src="" alt="" style="width: 300px;">
             <h3 id="bestScoreBio"></h3>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="closeModal">Close</button>
           </div>
         </div>
 
@@ -195,8 +195,12 @@
         $("#bestScoreBio").text(data.bio);
       
         $("#resultsModal").modal("toggle");
+
       });
     });
+    $('.modal').on('hidden.bs.modal', function(){
+      location.reload();
+    })
   </script>
 
 </body>
